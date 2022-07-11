@@ -322,6 +322,9 @@ contract PubFLModel {
             for (uint j=0; j<participants.length; j++) {
                 delete hasVoted[participants[i]][participants[j]];
             }
+            if (!hasRegistered[participants[i]]) {
+                delete participants[i];
+            }
         }
         round += 1;
         votesPerRound = 0; 
@@ -335,6 +338,12 @@ contract PubFLModel {
         require(GlobalReputationOf[msg.sender] > 0, "NEF");
         uint val = GlobalReputationOf[msg.sender];
         GlobalReputationOf[msg.sender] = 0;
+        for (uint i=0; i<participants.length; i++) { 
+            if (participants[i] == msg.sender) {
+                delete participants[i];
+            }
+        }
+        hasRegistered[msg.sender] = false;
         payable(address(msg.sender)).transfer(val);
     }
 
