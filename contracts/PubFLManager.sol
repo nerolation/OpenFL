@@ -7,22 +7,17 @@
 //  _| |_    | \_/ |, |  \__/ |_| |_     _| |__/ | 
 // |_____|   '.__.'_/[__;.__.'|_____|   |________| 
 // 
-// PubFL is a Ethereum-based reputation system to 
-// facilitate federated learning. This contract is 
-// part of the paper by Anton Wahrstätter. The 
-// contracts do only represent Proof-of-Concepts
-// and have not been developed to be used in 
-// productive environments. Do not use them, except
-// for testing purpose.                                              
+// PubFL is a Ethereum-based reputation system to facilitate federated learning. 
+// This contract is part of the PubFL research paper by Anton Wahrstätter. The contracts do only 
+// represent Proof-of-Concepts and have not been developed to be used in productive
+// environments. Do not use them, except for testing purpose.                                              
 
 pragma solidity =0.8.9;
 
-import "./math/PRBMathSD59x18.sol";
-import "./math/PRBMathUD60x18.sol";
 import "./PubFLModel.sol";
 
 contract PubFLManager {
-
+    
     mapping(address => mapping(uint256 => address)) public ModelOf;
     mapping(address => uint256) public ModelCountOf;
 
