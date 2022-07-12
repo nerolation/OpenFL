@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity =0.8.9;
 
-import "./PRBMathSD59x18.sol";
-import "./PRBMathUD60x18.sol";
+import "./math/PRBMathSD59x18.sol";
+import "./math/PRBMathUD60x18.sol";
 
 contract PubFLModel {
     using PRBMathSD59x18 for int256;
