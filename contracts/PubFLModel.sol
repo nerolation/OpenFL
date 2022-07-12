@@ -7,23 +7,15 @@
 //  _| |_    | \_/ |, |  \__/ |_| |_     _| |__/ | 
 // |_____|   '.__.'_/[__;.__.'|_____|   |________| 
 // 
-// PubFL is a Ethereum-based reputation system to 
-// facilitate federated learning. This contract is 
-// part of the paper by Anton Wahrstätter. The 
-// contracts do only represent Proof-of-Concepts
-// and have not been developed to be used in 
-// productive environments. Do not use them, except
-// for testing purpose.                                              
+// PubFL is a Ethereum-based reputation system to facilitate federated learning. 
+// This contract is part of the PubFL research paper by Anton Wahrstätter. The contracts do only 
+// represent Proof-of-Concepts and have not been developed to be used in productive
+// environments. Do not use them, except for testing purpose.                                           
 
 pragma solidity =0.8.9;
 
-import "./math/PRBMathSD59x18.sol";
-import "./math/PRBMathUD60x18.sol";
 
 contract PubFLModel {
-    using PRBMathSD59x18 for int256;
-    using PRBMathUD60x18 for uint256;
-
     bytes32 public modelHash;
     
     uint8 public round = 0;
@@ -326,7 +318,7 @@ contract PubFLModel {
                         delete whitelistedForRewards[participants[i]];
                         uint reward = nrOfVotesOfUser[participants[i]] * rewardPerVote;
                         if (totalPunishment > 0) {
-                            uint weight = uint(nrOfVotesOfUser[participants[i]]).div(uint(votesPerRound));
+                            uint weight = uint(nrOfVotesOfUser[participants[i]]*1e18)/uint(votesPerRound);
                             reward +=  (totalPunishment * weight) / 1e18;   
                         }    
                         GlobalReputationOf[participants[i]] += reward;
