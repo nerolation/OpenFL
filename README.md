@@ -16,8 +16,8 @@ We propose and implement a decentralized federated learning environment that bui
 
 This repository contains the following code:
 ```c++
-* contracts/PubFLManager.sol -> Solditiy
-* contracts/PubFLModel.sol   -> Solditiy
+* contracts/PubFLManager.sol -> Solidity
+* contracts/PubFLModel.sol   -> Solidity
 * api/smartcontracts.py -> Python3
 * api/pytorch_model.py  -> Python3
 * simulations/mnist_ropsten_simulation.ipynb -> Jupyter Notebook
