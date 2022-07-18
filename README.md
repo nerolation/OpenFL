@@ -20,8 +20,8 @@ This repository contains the following code:
 * contracts/PubFLModel.sol   -> Solidity
 * api/smartcontracts.py -> Python3
 * api/pytorch_model.py  -> Python3
-* simulations/mnist_ropsten_simulation.ipynb -> Jupyter Notebook
-* simulations/cifar10_ganache_simulation.ipynb -> Jupyter Notebook
+* experiments/mnist_ropsten_experiment.ipynb -> Jupyter Notebook
+* experiments/cifar10_ganache_experiment.ipynb -> Jupyter Notebook
 ```
 
 We deploy our contracts to the following addresses (Ropsten Testnet):
@@ -29,4 +29,4 @@ We deploy our contracts to the following addresses (Ropsten Testnet):
 * 0x059bff304F4653a1C290E368FE14cC36cB41461B ([Challenge Contract](https://ropsten.etherscan.io/address/0x059bff304f4653a1c290e368fe14cc36cb41461b))
 
 
-![alt text](./charts/simulations.png)
+![alt text](./charts/experiment.png)
