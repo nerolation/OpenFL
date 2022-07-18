@@ -29,4 +29,4 @@ We deploy our contracts to the following addresses (Ropsten Testnet):
 * 0x059bff304F4653a1C290E368FE14cC36cB41461B ([Challenge Contract](https://ropsten.etherscan.io/address/0x059bff304f4653a1c290e368fe14cc36cb41461b))
 
 
-![alt text](./charts/experiment.png)
+![alt text](./charts/experiments.png)
