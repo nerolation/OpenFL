@@ -178,7 +178,7 @@ contract PubFLModel {
 
     // Timestamp weights to the chain
     function provideHashedWeights(bytes32 hashedWeights, uint salt) public onlyRegisteredUsers hasNotYetProvidedWeights {
-        require(secretOf[msg.sender][round] == keccak256(abi.encodePacked(hashedWeights, salt)), "NKS");
+        require(secretOf[msg.sender][round] == keccak256(abi.encodePacked(hashedWeights, salt, msg.sender)), "NKS");
         weightsOf[msg.sender][round] = hashedWeights;
         nrOfProvidedHashedWeights += 1;
     }
