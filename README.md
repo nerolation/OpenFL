@@ -1,13 +1,12 @@
-# PubFL: Censorship-Resistant Federated Learning on Public Blockchains
+# OpenFL: Decentralized Federated Learning on Public Blockchain Systems
 
 ```
-//  _______           __       ________  _____     
-// |_   __ \         [  |     |_   __  ||_   _|    
-//   | |__) |__   _   | |.--.   | |_ \_|  | |      
-//   |  ___/[  | | |  | '/'`\ \ |  _|     | |   _  
-//  _| |_    | \_/ |, |  \__/ |_| |_     _| |__/ | 
-// |_____|   '.__.'_/[__;.__.'|_____|   |________| 
-// 
+//   ___                   _____ _     
+//  / _ \ _ __   ___ _ __ |  ___| |    
+// | | | | '_ \ / _ \ '_ \| |_  | |    
+// | |_| | |_) |  __/ | | |  _| | |___ 
+//  \___/| .__/ \___|_| |_|_|   |_____|
+//       |_|                           
 // by Anton Wahrstätter, Sajjad Khan and Davor Svetinovic
 ```
 
