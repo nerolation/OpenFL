@@ -24,7 +24,6 @@ free_c = "#9467bd"
 colors.remove(bad_c)
 colors.remove(free_c)
 
-
 class Participant:
     def __init__(self, _id, _train, _val, _model, _optimizer, _criterion, 
                  _attitude, _default_collateral, _max_collateral, 
